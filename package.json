@@ -1,0 +1,11 @@
+{
+  "name": "joao_victor_desafio",
+  "version": "1.0.0",
+  "description": "Este repositório contém os arquivos necessários para realizar testes automatizados na página [ViaCEP](https://viacep.com.br/), utilizando o framework Cypress.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Victor Holanda",
+  "license": "ISC"
+}
