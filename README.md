@@ -1,8 +1,38 @@
 # Desafio Técnico - Testes Automatizados com Cypress na Página ViaCEP
 
-Este repositório contém os arquivos necessários para realizar testes automatizados na página [ViaCEP](https://viacep.com.br/), utilizando o framework Cypress.
+Este projeto implementa a automação de testes para a API pública do ViaCEP utilizando **Cypress**. O objetivo é validar a funcionalidade principal da API: a consulta de um endereço a partir de um CEP válido.
 
-Abaixo estão as instruções para clonar o repositório, instalar o Cypress e executar os testes.
+Abaixo estão o Fluxo do teste e as instruções para clonar o repositório, instalar o Cypress e executar os testes.
+
+---
+
+## **Descrição do Fluxo do Teste**
+
+O teste implementado segue o seguinte fluxo:
+
+1. **Cenário Testado**: Consulta de CEP válido.
+2. **Objetivo**: Validar que a API ViaCEP retorna os dados corretos para um CEP existente.
+3. **Fluxo do Teste**:
+   - Realizar uma requisição HTTP `GET` para o endpoint da API com um CEP válido (`01001-000`).
+   - Verificar se o status da resposta é `200`, indicando que a requisição foi bem-sucedida.
+   - Validar que os campos principais da resposta (logradouro, bairro, localidade e UF) possuem os valores esperados.
+
+### **Cenário Implementado**
+
+- **Consulta de CEP válido**:
+  - CEP utilizado: `01001-000`.
+  - Dados esperados:
+    ```json
+    {
+      "logradouro": "Praça da Sé",
+      "bairro": "Sé",
+      "localidade": "São Paulo",
+      "uf": "SP"
+    }
+    ```
+  - Comportamento esperado:
+    - Status HTTP: `200`.
+    - Corpo da resposta: Deve conter os dados corretos para o CEP consultado.
 
 ---
 
