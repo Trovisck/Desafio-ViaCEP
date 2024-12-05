@@ -22,12 +22,13 @@ Antes de iniciar, garanta que você possui os seguintes itens instalados no seu 
 3. Execute o comando abaixo para clonar o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/repo-desafio-viacep.git
+git clone https://github.com/Trovisck/Desafio-ViaCEP.git
+
 ```
 
 4. Após o download, entre na pasta do projeto:
    ```bash
-   cd repo-desafio-viacep
+   cd Desafio-ViaCEP
    ```
 ## Passo 2: Instalar as Dependências
 
@@ -45,7 +46,8 @@ git clone https://github.com/seu-usuario/repo-desafio-viacep.git
    npx cypress open
 
 2. A interface gráfica do Cypress será exibida, mostrando a lista de testes disponíveis no projeto.  
-3. Clique no teste desejado para iniciá-lo.
+3. Clique no teste ConsultaCep.
+4. Aguarde até o teste ser realizado.
 
 ## Passo 4: Executar os Testes em Modo Headless (Opcional)
 
